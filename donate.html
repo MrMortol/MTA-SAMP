@@ -1,0 +1,138 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Россия Дрифт - Играй в GTA Criminal Russia по сети</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    
+    $(document).ready(function() {
+     
+    $('a[href^="#"]').click(function(){
+            var el = $(this).attr('href');
+            $('body').animate({
+                scrollTop: $(el).offset().top}, 2000);
+            return false; 
+    });
+        
+    });
+    
+    </script>
+
+
+    
+</head>
+<body class="donate">
+
+    <div style="position: relative">
+        <div class="candies">
+            <div class="candy candy-1" data-x-start="right" data-x="27" data-y="120"></div>
+            <div class="candy candy-2" data-x-start="right" data-x="600" data-y="120"></div>
+            <div class="candy candy-3" data-x-start="left" data-x="250" data-y="250"></div>
+
+            <div class="candy candy-5" data-x-start="right" data-x="250" data-y="1047"></div>
+            <div class="candy candy-6" data-x-start="left" data-x="250" data-y="1047"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <a class="logo" href="/"></a>
+            <ul class="nav-menu">
+                <li class="active transition"><a href="index.php">Главная</a></li>
+                <li class="transition"><a href="howtoplay.html">Как начать играть</a></li>
+                <li class="transition"><a href="about.html">О проекте</a></li>
+                <li class="transition"><a href="donate.php">Донат</a></li>
+                <li class="transition"><a href="https://hostinpl.ru/">Форум</a></li>
+                <li class="transition"><a href="https://hostinpl.ru/"><i class="icon-vk"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="donate">
+        <div class="container">
+            <form method="POST" class="form">
+                <h2>Донат</h2>
+                <select name="server_id">
+                    <option value="1">Сервер 01</option>
+                    <option value="2">Сервер 02</option>
+                    <option value="3">Сервер 03</option>
+                </select>
+                <input type="text" class="nickname" name="account" required>
+                <input type="text" class="sum" name="sum" required>
+
+
+                <input type="checkbox" name="agreement" id="checkbox_agreement">
+                <label for="checkbox_agreement">Я подтверждаю условия оферты</label>
+                <div class="form-footer">
+                    <a href="#sale-modal" class="modal-btn sale">
+                        <p>2</p>
+                    </a>
+                    <button type="submit" id="submit"><i class="shop"></i> Пополнить</button>
+                    <a href="#help-modal" class="modal-btn help"></a>
+                </div>
+                <a href="http://dj-sergey.ucoz.net/#/threads/%D0%9F%D1%83%D0%B1%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D0%BE%D1%84%D0%B5%D1%80%D1%82%D0%B0.165/">Подробнее о публичной оферте</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="active transition"><a href="index.php">Главная</a></li>
+                <li class="transition"><a href="howtoplay.html">Как начать играть</a></li>
+                <li class="transition"><a href="about.html">О проекте</a></li>
+                <li class="transition"><a href="donate.php">Донат</a></li>
+                <li class="transition"><a href="https://hostinpl.ru/">Форум</a></li>
+                <li class="transition"><a href="https://hostinpl.ru/"><i class="icon-vk"></i></a></li>
+            </ul>
+
+            <div class="copyright">
+                Copyright &copy; 2020
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="help-modal">
+        <div class="modal-content">
+            <a href="" class="modal-close"></a>
+            <h4>ЧТО МОЖНО КУПИТЬ НА ДОНАТ?</h4>
+            <p>
+                1 донат-очко = 1000 игровых рублей<br>
+                Покупка всех скиллов на оружие = 299 донат-очков <br>
+                Снятие warn'ов с аккаунта = 100 донат-очков <br>
+                Смена игрового ника = 30 донат-очков <br>
+                Повысить законопослушность (15д-о +10) <br>
+                Повысить игровой уровень = 100 д-о/1уровень <br>
+                Все лицензии и права = 250 донат-очков <br>
+                Покупка VIP аккаунта навсегда = 499 донат-очков 
+            </p>
+        </div>
+    </div>
+
+    <div class="modal" id="sale-modal">
+        <div class="modal-content">
+            <a href="" class="modal-close"></a>
+            <h4>Скидки и новости доната</h4>
+            <p>
+                Действует акция x2 День <br>
+                Опыт, зарплата разнорабочих и донат-очки<br>
+                УМНОЖАЮТСЯ НА 2<br>
+            </p>
+        </div>
+    </div>    
+
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
